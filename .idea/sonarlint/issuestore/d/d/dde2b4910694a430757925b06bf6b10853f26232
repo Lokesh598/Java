@@ -1,0 +1,19 @@
+
+w
+java:S3740"/Provide the parametrized type for this generic.(—‚î—ÿÿÿÿÿ8íÍ°•2J$13929764-ad44-43ac-9753-af8b5f123feb
+w
+java:S3740"/Provide the parametrized type for this generic.(—‚î—ÿÿÿÿÿ8îÍ°•2J$75da4b84-6d3c-4336-8353-862e59bc8e36
+k
+java:S1604
+"(Make this anonymous inner class a lambda(ä…±‚8Ğ©¨•2J$d48df7e0-0115-482b-b6fc-e0c6bc786dfc
+k
+java:S1604"(Make this anonymous inner class a lambda(‡èİù8ãÊ©¨•2J$6bc057ed-de5f-4895-b53e-396e396439fc
+‡
+java:S1854"?Remove this useless assignment to local variable "threadLocal".(—‚î—ÿÿÿÿÿ8ıÍ°•2J$0f17e2b3-47c0-4fa9-be5d-0d3a1ce0de29
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(÷„Ú¼şÿÿÿÿ8…¥¨•2J$3d03255e-513e-4ae8-a95f-32739c544e5a
+m	java:S106"+Replace this use of System.out by a logger.(Ÿ§ÊŸ8…¥¨•2J$aa4aa963-8ca2-4bfd-aee2-4d913895d36e
+m	java:S106"+Replace this use of System.out by a logger.(’Õì®8óÖ­¨•2J$104cec17-cd4a-4503-85fc-7816fa1e9999
+x
+java:S1481"0Remove this unused "threadLocal" local variable.(—‚î—ÿÿÿÿÿ8ˆÎ°•2J$6d27bb4d-2861-4be6-b602-ea6b799a3aaa
+¡
+java:S2142%"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8’Æ¨•2J$c584fa4f-c76f-446f-a8c5-0b5b07bfea21

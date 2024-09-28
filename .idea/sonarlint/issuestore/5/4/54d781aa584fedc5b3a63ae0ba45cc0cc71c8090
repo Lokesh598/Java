@@ -1,0 +1,53 @@
+
+ƒ
+java:S1192"GDefine a constant instead of duplicating this literal "Lokesh" 4 times.(¡Ù‘ìJ$b1cdcd14-936c-4346-8a5e-042590864b15
+k	java:S106""+Replace this use of System.out by a logger.(¢¼ûôşÿÿÿÿJ$bef7fe6f-3f53-491c-a998-c0d19b66b457
+»
+java:S62046"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(¯ù‚ıÿÿÿÿJ$7619c8d0-5fb2-4c59-ba4f-1d791f5e332d
+¶
+java:S62047"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(´ÄÚJ$becc7883-aeff-482e-91d4-a2b2bb025b10
+f	java:S1068"+Replace this use of System.out by a logger.(şõ‘›J$0f85637c-d27f-42c8-ae14-9695658d3878
+¶
+java:S6204F"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(óÏ÷J$ea3be9a1-9eec-4ece-b8a7-3bcb588b28d2
+k	java:S106G"+Replace this use of System.out by a logger.(¸šñÙüÿÿÿÿJ$458b6967-7879-4127-a31a-81d41db460f9
+f	java:S106J"+Replace this use of System.out by a logger.(åß¨íJ$f88deebf-f6f6-4643-8f05-0dbf40a2127d
+k	java:S106M"+Replace this use of System.out by a logger.(¡÷ˆöÿÿÿÿÿJ$90335805-023e-411a-9688-97907b97814c
+f	java:S106P"+Replace this use of System.out by a logger.(úÜÇøJ$76c7b1a5-c58a-43dc-8114-fe0711ca3a3c
+f	java:S106S"+Replace this use of System.out by a logger.(ïÃÂàJ$c58249a9-eae5-49e8-b109-f8f97a401f6e
+e	java:S106Y"+Replace this use of System.out by a logger.(äæõDJ$f38eb9a9-f587-4c93-bda6-ada3d22ca0d3
+¶
+java:S6204_"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(æœÖÖJ$c639ce1c-79dd-4bf9-860d-2f20631d1dbb
+k	java:S106`"+Replace this use of System.out by a logger.(áã§şûÿÿÿÿJ$8d0edb48-287a-4a10-98f2-125b96c7dad3
+f	java:S106f"+Replace this use of System.out by a logger.(÷€ƒåJ$32cce29c-4390-487a-821a-80750907c46e
+f	java:S106g"+Replace this use of System.out by a logger.(Ş‘÷šJ$374ce475-3799-4410-983e-ef0bd93757ce
+f	java:S106m"+Replace this use of System.out by a logger.(„¥•ÂJ$493859f3-b817-435d-a1e6-6be876403b45
+»
+java:S6204{"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ŠÁº•üÿÿÿÿJ$15c38269-58b6-4982-b4c6-131742bbe903
+f	java:S106|"+Replace this use of System.out by a logger.(ù˜ˆJ$63d1eca0-a5ff-4ff8-a0ef-3babc78d887f
+¼
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(„ÙÜ™ûÿÿÿÿJ$5d025416-c33d-426d-a8f2-b4428b01ab40
+l	java:S106‚"+Replace this use of System.out by a logger.(©¾ØüúÿÿÿÿJ$7b535019-e03a-4359-b531-fa1807f8d725
+g	java:S106‡"+Replace this use of System.out by a logger.(Æû˜J$1fac4218-e6ad-4a32-89dd-f09b974e85d0
+g	java:S106Œ"+Replace this use of System.out by a logger.( ˜ãöJ$415f4bd6-1977-42ff-b28c-d719d8f4ae65
+g	java:S106‘"+Replace this use of System.out by a logger.(øË«J$881dff21-05be-41ad-838b-4d0291ec1c49
+l	java:S106–"+Replace this use of System.out by a logger.(ËõªúÿÿÿÿJ$f606cfb7-5e8b-4add-9e63-8c711c18656e
+¼
+java:S6204–"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ËõªúÿÿÿÿJ$8a1a7c01-c717-4384-ad97-23bcf32f9e96
+¼
+java:S6204¥"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(™Ì½µÿÿÿÿÿJ$ae9d3564-358b-48bd-bb9f-ab1cce3128ac
+¼
+java:S6204£"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ªçŸŠøÿÿÿÿJ$cc4277a4-0847-4a44-9200-c311af0640c5
+g	java:S106¦"+Replace this use of System.out by a logger.(¾—³šJ$a725597d-93fa-411f-bef9-492201558109
+g	java:S106¯"+Replace this use of System.out by a logger.(ÍîµˆJ$d1151a7d-14f6-4ef1-80f8-af1c86bf5988
+·
+java:S6204¯"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ÍîµˆJ$fccd227c-b598-4396-96d2-5475a9f910c6
+g	java:S106½"+Replace this use of System.out by a logger.(°â³ÑJ$37b83f56-26b2-4c04-8ffe-27edd2085755
+l	java:S106¾"+Replace this use of System.out by a logger.(à›ñºüÿÿÿÿJ$a6aaaa52-95bb-41b0-866d-6115058438a1
+l	java:S106Ù"+Replace this use of System.out by a logger.(¤™ëãÿÿÿÿÿJ$c950f416-da6d-4ad1-80c0-65529f4be46f
+¼
+java:S6204Û"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(å÷İªşÿÿÿÿJ$7112dc78-06c3-4229-a909-48fbf6294071
+g	java:S106Ü"+Replace this use of System.out by a logger.(ë×ÚùJ$cd875467-3c88-46f8-bba6-9e188dcb86b7
+l	java:S106å"+Replace this use of System.out by a logger.(õÒŒûúÿÿÿÿJ$a9e4de10-9d3d-4193-85e9-f59972bc4c07
+·
+java:S6204ò"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(äÈ¤J$d40ebcec-6b05-43ab-96f9-12f32cca81bf
+}	java:S125î"<This block of commented-out lines of code should be removed.(ÎŸ®òøÿÿÿÿJ$2cc2149e-9999-42d8-bbb2-fc8a9a1e23c8

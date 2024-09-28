@@ -1,0 +1,15 @@
+
+k
+java:S1604"(Make this anonymous inner class a lambda(¼×¨™8ä¼ËÍ•2J$f1ada1c0-5b67-4322-a018-8c16fdcfbec5
+p
+java:S1604"(Make this anonymous inner class a lambda(ôâ…Æþÿÿÿÿ8ä¼ËÍ•2J$31cab66a-ff43-4a12-a2b7-38ffd8524dee
+r	java:S106#"+Replace this use of System.out by a logger.(Šï£Àÿÿÿÿÿ8ï¼ËÍ•2J$a4d3fe8d-0b3b-4085-8622-d6346b30383c
+†
+java:S2276'"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(á˜ ¶8ï¼ËÍ•2J$ea688e19-4cb2-4096-b6ff-0b209526e0aa
+r	java:S106,"+Replace this use of System.out by a logger.(õ—…«ÿÿÿÿÿ8ð¼ËÍ•2J$34212013-4f67-4b1c-8c1e-f2ba5a7fe666
+r	java:S106."+Replace this use of System.out by a logger.(Ûü”Þÿÿÿÿÿ8ð¼ËÍ•2J$adb9b8a7-9642-42fc-a3ed-80dd86ffb1d6
+r	java:S1066"+Replace this use of System.out by a logger.(Ûü”Þÿÿÿÿÿ8ð¼ËÍ•2J$fba55b86-ad35-4c70-ab15-7c9dbf2eb0da
+†
+java:S2276:"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(á˜ ¶8ñ¼ËÍ•2J$7b6ed410-3208-48c5-8624-32debc957a43
+r	java:S106?"+Replace this use of System.out by a logger.(à¥‡éüÿÿÿÿ8ñ¼ËÍ•2J$d62ad962-b07f-44c0-93e7-ab2498d7d4af
+r	java:S106A"+Replace this use of System.out by a logger.(Šï£Àÿÿÿÿÿ8ñ¼ËÍ•2J$87a7026f-c283-4d79-9f25-6155249f8258

@@ -1,0 +1,44 @@
+
+„
+java:S4973?"<Strings and Boxed types should be compared using "equals()".(ğÀÄËüÿÿÿÿ8ô®©š„2J$60b5c6d6-f196-4c51-8024-45eeee4cba2b
+„
+java:S4973C"<Strings and Boxed types should be compared using "equals()".(ğÀÄËüÿÿÿÿ8õ®©š„2J$c10daf7d-956e-4884-9dfe-e06efb3d1b79
+Š
+java:S2259³"AA "NullPointerException" could be thrown; "str" is nullable here.(™ª ùÿÿÿÿ8œıÏš„2J$7e24df14-e936-4b58-92dc-54a9ca590c22
+†
+java:S3518…"CMake sure this expression can't be zero before doing this division.(ûºú8™¯©š„2J$877dcc1b-d6fa-4b7a-b53e-c30e56c93a1f
+‰
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(¯ç¥°ûÿÿÿÿ8¯©š„2J$0bd6bcbd-e363-4a98-9ceb-a757a95b6d9c
+r	java:S106"+Replace this use of System.out by a logger.(ı·‡‘øÿÿÿÿ8£¯©š„2J$2f515af6-90a4-40e3-b538-68885305e9b8
+r	java:S106"+Replace this use of System.out by a logger.(ûãÁùùÿÿÿÿ8£¯©š„2J$f3439719-4d56-4460-b0ed-d6d6784127ad
+r	java:S106"+Replace this use of System.out by a logger.(“Ÿ÷Ÿüÿÿÿÿ8¥¯©š„2J$2a544613-c687-41d0-80da-0bd2cbf7b349
+m	java:S1062"+Replace this use of System.out by a logger.(¼ÁÃ8¨¯©š„2J$df5e44fe-4813-42e2-b85e-41b3a2a2752a
+r	java:S106?"+Replace this use of System.out by a logger.(ğÀÄËüÿÿÿÿ8¨¯©š„2J$5cb87b41-de81-4516-86ed-46b257690a93
+r	java:S106C"+Replace this use of System.out by a logger.(ğÀÄËüÿÿÿÿ8©¯©š„2J$6d1890d9-5694-40bc-898e-dbeecae9d19e
+r	java:S106D"+Replace this use of System.out by a logger.(Õ“¤‹şÿÿÿÿ8©¯©š„2J$c1924611-cfc6-4d34-ab9a-36db3b524285
+r	java:S106O"+Replace this use of System.out by a logger.(‹×ºıÿÿÿÿ8©¯©š„2J$08ee0315-6214-4b02-b6ea-7967e692243f
+r	java:S106m"+Replace this use of System.out by a logger.(¯®‘şøÿÿÿÿ8«¯©š„2J$613feca6-bfdc-4e98-b855-4ffe5eb1edc9
+r	java:S106t"+Replace this use of System.out by a logger.(¤ƒ•Ôşÿÿÿÿ8¬¯©š„2J$df0a1490-3705-4dbf-9f61-89f7cc8d4768
+~	java:S125x"<This block of commented-out lines of code should be removed.(ÂÓ§è8­¯©š„2J$cec5b37f-fa73-41ca-a177-b4d8e2d3b47f
+x
+java:S1854…"5Remove this useless assignment to local variable "a".(ûºú8®¯©š„2J$d2582bf6-dbc3-4616-99f2-c4f690c16a9b
+i
+java:S1481…"&Remove this unused "a" local variable.(ûºú8°¯©š„2J$f359b2a5-e831-4fc5-9d8a-8b8a3675b167
+n	java:S106‡"+Replace this use of System.out by a logger.(‚úŸÕ8°¯©š„2J$ce6f8c1b-199e-4717-8ee3-22b8ab11dbe1
+s	java:S106™"+Replace this use of System.out by a logger.(’˜¢£ûÿÿÿÿ8²¯©š„2J$e17a3f90-67bb-4527-adf9-9eeadd2621e5
+s	java:S106ª"+Replace this use of System.out by a logger.(ö¡Íüÿÿÿÿÿ8³¯©š„2J$de457a90-1fff-4dc6-821b-cfdf5d09429f
+~	java:S125¯"<This block of commented-out lines of code should be removed.(±¼º8³¯©š„2J$6f573b93-0aa5-4e6d-a14e-0f1c77097c73
+s	java:S106Ê"+Replace this use of System.out by a logger.(Ğ¶¶Ùúÿÿÿÿ8´¯©š„2J$c468d270-f20e-4919-a082-c8c65acd7ea7
+n	java:S106İ"+Replace this use of System.out by a logger.(ìïôö8¶¯©š„2J$c498499b-ae90-424b-ad8e-bb17a43be49b
+„	java:S125å"<This block of commented-out lines of code should be removed.(§€›€øÿÿÿÿ8·¯©š„2J$e509b8d1-0805-4d08-b753-bc9899acbef8
+s	java:S106ô"+Replace this use of System.out by a logger.(»õŸÇúÿÿÿÿ8·¯©š„2J$67463227-3c18-4e37-95c9-bd1b3e158c94
+n	java:S106‰"+Replace this use of System.out by a logger.(‘¨Í°8š†½š„2J$9bfd5954-fee6-4e63-8418-e5e8e754c372
+n	java:S106"+Replace this use of System.out by a logger.(®¿çù8š†½š„2J$17b87803-436c-4127-b101-485e775b8ba4
+s	java:S106‘"+Replace this use of System.out by a logger.(¹Êô¥øÿÿÿÿ8›†½š„2J$561f7a48-fae7-4ca2-ac20-760a587490fd
+m	java:S106"+Replace this use of System.out by a logger.(Üƒ²8ÅÓ¾š„2J$0b4d3747-e6d2-495d-a429-7dd53418ea00
+s	java:S106¤"+Replace this use of System.out by a logger.(ú¶âÔûÿÿÿÿ8ÅÓ¾š„2J$6cfe3b45-9c9c-4fe7-baa7-00dfa329a1ec
+s	java:S106³"+Replace this use of System.out by a logger.(™ª ùÿÿÿÿ8ÂıÏš„2J$9479dc7a-8f51-4cf5-b524-3fa03d6a6e39
+‰
+java:S2178³"fCorrect this "|" to "||" and extract the right operand to a variable if it should always be evaluated.(™ª ùÿÿÿÿ8ëÊÑš„2
+Ã
+java:S2159³"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(™ª ùÿÿÿÿ8İıÏš„2J$a2c09c8d-bd62-43fc-878d-ab58e2a3c0f6

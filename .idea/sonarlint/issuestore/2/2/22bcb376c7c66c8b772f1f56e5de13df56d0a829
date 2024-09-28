@@ -1,0 +1,7 @@
+
+m	java:S106	"+Replace this use of System.out by a logger.(éüëÜ8º‹¼Ä†2J$8fa33a02-1428-4ef8-ae41-666e8f3ce02c
+¡
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ûõÀÄ†2J$cdd9c4e2-f3b8-4e51-abe6-31bd8f7ce5c3
+ˆ
+java:S2438"@Replace this SleepAndWait instance with an instance of Runnable.(½Ôµ£üÿÿÿÿ8»‹¼Ä†2J$18c2808e-21f5-441f-a7ba-2b5026693a6c
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(†×²¾şÿÿÿÿ8Ç€âÄ†2J$c332484f-27dc-45b1-98f0-0569b40605b1

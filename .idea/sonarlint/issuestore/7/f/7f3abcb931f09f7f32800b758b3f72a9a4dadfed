@@ -1,0 +1,49 @@
+
+Š
+java:S1192'"GDefine a constant instead of duplicating this literal "Lokesh" 3 times.(˜Âú8×˜´¯„2J$86c4fd5b-e504-45c3-b935-b9a7bb470d61
+˜	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎË™ìúÿÿÿÿ8Ù˜´¯„2J$c21fb9c2-3204-480a-a79a-a2cfd65aea21
+€
+java:S4973"<Strings and Boxed types should be compared using "equals()".(Ö†âä8Û˜´¯„2J$e4dc8e7e-b6b1-4497-86db-97c40a1cdde0
+
+java:S1854"7Remove this useless assignment to local variable "str".(íŞÃËúÿÿÿÿ8é˜´¯„2J$3232894d-476e-4f4d-916c-c192ffff8f6e
+h
+java:S2129" Remove this "String" constructor(œ·äõùÿÿÿÿ8ë˜´¯„2J$8c69ca17-5965-4f59-83f9-4259f1bc4d97
+l	java:S106"+Replace this use of System.out by a logger.(Ú‚u8ì˜´¯„2J$84a23697-6fb6-42b9-8361-5febf60087ca
+m	java:S106"+Replace this use of System.out by a logger.(ä»†¼8ì˜´¯„2J$497532c7-812b-4e34-8fde-6611ea24e002
+m
+java:S2201"*The return value of "concat" must be used.(£Ê¬8í˜´¯„2J$c568cbda-9603-42ea-8d85-93985c9c7dc7
+r	java:S106"+Replace this use of System.out by a logger.(“Ÿ÷Ÿüÿÿÿÿ8í˜´¯„2J$befec9f1-4fde-4adf-bf17-8510d2e08b4c
+r	java:S106"+Replace this use of System.out by a logger.(á‚Øµúÿÿÿÿ8í˜´¯„2J$896e18e4-12fe-428f-bf3b-0b9a0e7fe1ff
+r	java:S106("+Replace this use of System.out by a logger.(“‘Íåûÿÿÿÿ8î˜´¯„2J$4af67d30-491a-4085-88d1-430168a8cfc5
+„
+java:S1126-"AReplace this if-then-else statement by a single return statement.(Â¼û¹8ï˜´¯„2J$2c683bdd-2334-4358-b9fb-79bf67254f19
+m	java:S106D"+Replace this use of System.out by a logger.(‘±­Á8ğ˜´¯„2J$e1b3eb89-67ae-4459-8109-926b54e12e5d
+g
+java:S1659G"Declare "l" on a separate line.(ûˆ…¦úÿÿÿÿ8ò˜´¯„2J$d53cdb87-75ff-4485-82c5-23233b8fe3b6
+„
+java:S1126a"AReplace this if-then-else statement by a single return statement.(Ùÿµ8ô˜´¯„2J$a4aef2c4-6609-4480-beac-393444e300d6
+r	java:S106h"+Replace this use of System.out by a logger.(ı™¨ùÿÿÿÿ8ó˜´¯„2J$85fa0294-83aa-4321-b6e9-bcd04ce5c6b3
+r	java:S106p"+Replace this use of System.out by a logger.(“‘Íåûÿÿÿÿ8ô˜´¯„2J$199c12b3-0e88-4415-bea2-e1bcf6b76230
+„
+java:S1126t"AReplace this if-then-else statement by a single return statement.(ç«å8ÚÁ´¯„2J$656bbd20-017d-4473-9f2a-d44a2f4f5e05
+s	java:S106"+Replace this use of System.out by a logger.(ÇîÚÜşÿÿÿÿ8õ˜´¯„2J$d04709cf-f1ed-4eb0-8fa4-f2e472fac4bb
+n	java:S106"+Replace this use of System.out by a logger.(Ö†âä8õ˜´¯„2J$74c7110d-79d1-4e6c-9100-2558fdfaf5e6
+n	java:S106"+Replace this use of System.out by a logger.(ı¿Û8õ˜´¯„2J$68d0c53d-62cd-4a6e-98da-ef5376baaeb7
+s	java:S106"+Replace this use of System.out by a logger.(“¡ÂÚÿÿÿÿÿ8õ˜´¯„2J$f88f33a6-81f1-470b-b725-0a4dcdf2eb1f
+s	java:S106‘"+Replace this use of System.out by a logger.(·ô…Ãÿÿÿÿÿ8õ˜´¯„2J$de77a89c-36bf-4553-92ed-ed3422cdc23e
+s	java:S106’"+Replace this use of System.out by a logger.(³æÖşøÿÿÿÿ8ö˜´¯„2J$067e5214-875d-4550-af90-d9dc843f2762
+d
+java:S2129“" Remove this "String" constructor(ëõŸÅ8ö˜´¯„2J$1d34549e-8181-49d7-b9c4-90a815caf95e
+d
+java:S2129”" Remove this "String" constructor(ŸŞ‰8ö˜´¯„2J$a7d857ad-9c75-4fa4-af21-328846119237
+s	java:S106•"+Replace this use of System.out by a logger.(ŸÖ³úùÿÿÿÿ8ö˜´¯„2J$fdd9808b-b58a-422d-9c25-9a02fd8d9e3b
+„	java:S125–"<This block of commented-out lines of code should be removed.(§şµ¾ıÿÿÿÿ8÷˜´¯„2J$122a281d-a1e7-458d-908c-f4b55caf9a04
+s	java:S106š"+Replace this use of System.out by a logger.(êèÀŸÿÿÿÿÿ8ø˜´¯„2J$e8485790-e315-49b4-919d-80dcb42c1043
+†
+java:S2094£"BRemove this empty class, write its code or make it an "interface".(Ùİ»Ó8ù˜´¯„2J$f8f1ae14-6bd9-423d-b1af-310e3259e76c
+s	java:S106Î"+Replace this use of System.out by a logger.(ı·Êôıÿÿÿÿ8ù˜´¯„2J$eb9b4462-90f5-4969-a5ab-3d773c343569
+	java:S125Ì"<This block of commented-out lines of code should be removed.(ÎÑ“ì8ù˜´¯„2J$f64a6ded-8c58-4e5b-bcb0-3541048ad77a
+‚
+java:S6002Ë">Remove or fix this lookahead assertion that can never be true.(Çäõ÷8ú˜´¯„2J$82688fa3-c538-4a7b-96b1-dce051553a55
+z
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8äÁ´¯„2J$7cb9084f-12bc-49b9-ba74-d58458864e7c

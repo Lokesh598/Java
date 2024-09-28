@@ -1,0 +1,13 @@
+
+}
+java:S11410"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÿ¨•2J$c3da1122-940e-4fde-a929-f2a86a2bb9f8
+p
+java:S1604"(Make this anonymous inner class a lambda(ÔŞíåşÿÿÿÿ8€‘¨•2J$a79a321d-5b9a-4ed8-b8f9-d8e5e2262e5a
+m	java:S106*"+Replace this use of System.out by a logger.(ÈÛŞ8’‘¨•2J$7d87e775-79d6-4d17-899b-b4ab498efa20
+r	java:S106/"+Replace this use of System.out by a logger.(Åâíúÿÿÿÿ8’‘¨•2J$08f8006a-749c-4edb-a36f-da3e42bd8ce1
+m	java:S1063"+Replace this use of System.out by a logger.(Ñ›ò8“‘¨•2J$7e5d09a2-2044-4726-b206-e496a756516b
+r	java:S106;"+Replace this use of System.out by a logger.(àØ¤çûÿÿÿÿ8“‘¨•2J$da1cea81-d773-4357-9ce3-8cac573071b9
+r	java:S106>"+Replace this use of System.out by a logger.(ıª¨ÿÿÿÿÿ8“‘¨•2J$c2f4a9de-1898-43fd-b675-c7d70c83669d
+~	java:S125H"<This block of commented-out lines of code should be removed.(ÊôŸ‰8•‘¨•2J$54bb0e9d-34aa-4392-b517-8212f0bcf453
+h
+java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8–‘¨•2J$62fb1e9e-5917-41c3-a587-2af15d214dbc
