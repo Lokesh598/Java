@@ -95,6 +95,6 @@ class Test {
 enum x {
     RUN;
 }
-enum Enums extends x{
-
-}
+//enum Enums extends x{
+//
+//}

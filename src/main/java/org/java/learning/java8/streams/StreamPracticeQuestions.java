@@ -2,11 +2,15 @@ package org.java.learning.java8.streams;
 
 import org.java.learning.java8.Student;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import javax.lang.model.util.ElementScanner14;
+import javax.swing.text.html.parser.Entity;
+import java.security.PublicKey;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Predicate;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 class StreamPracticeQuestions {
     public static void main(String[] args) {
@@ -31,6 +35,8 @@ class Question1 {
 
         List<Student> studentList = students.stream().filter(student -> student.getMarks() == maxMarks).toList();
 
+        Optional<Student> x = students.stream().max(Comparator.comparingDouble(Student::getMarks));
+        System.out.println("result = "+x);
         studentList.forEach(System.out::println);
 
     }
@@ -272,3 +278,389 @@ class Question8 {
         }
     }
 }
+
+/**
+ * Given a list of employees, find highest salary and print the name of employee.
+ */
+class Employee {
+    private String name;
+    private double salary;
+
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+    @Override
+    public String toString() {
+        return "Employee{name='" + name + "', salary=" + salary + "}";
+    }
+}
+class Question9 {
+    public static List<Employee> employees = List.of(
+            new Employee("John", 50000),
+            new Employee("Jane", 60000),
+            new Employee("Mark", 55000),
+            new Employee("Sophia", 75000),
+            new Employee("Alex", 40000)
+    );
+
+    public static void main(String[] args) {
+        double maxSal = employees.stream().mapToDouble(Employee::getSalary).max().orElseThrow();
+        List<Employee> res1 = employees.stream().filter(employee -> employee.getSalary()==maxSal).collect(Collectors.toList());
+
+        res1.add(new Employee("Ramesh", 100000));
+        res1.forEach(System.out::println);
+
+        Optional<Employee> res = employees.stream().max(Comparator.comparingDouble(Employee::getSalary));
+
+        res.ifPresent(System.out::println);
+    }
+}
+
+// Accumulate names into a List
+// List<String> list = people. stream()   .map(Person::getName)   .collect(Collectors. toList());
+// Accumulate names into a TreeSet
+// Set<String> set = people. stream().map(Person::getName)   .collect(Collectors. toCollection(TreeSet::new));
+// Convert elements to strings and concatenate them, separated by commas
+// String joined = things. stream()   .map(Object::toString)   .collect(Collectors. joining(", "));
+// Compute sum of salaries of employee
+// int total = employees. stream()   .collect(Collectors. summingInt(Employee::getSalary));
+// Group employees by department
+// Map<Department, List<Employee>> byDept = employees. stream()   .collect(Collectors. groupingBy(Employee::getDepartment));
+// Compute sum of salaries by department
+// Map<Department, Integer> totalByDept = employees. stream()   .collect(Collectors. groupingBy(Employee::getDepartment,                                  Collectors. summingInt(Employee::getSalary)));  // Partition students into passing and failing Map<Boolean, List<Student>> passingFailing = students. stream()   .collect(Collectors. partitioningBy(s -> s. getGrade() >= PASS_THRESHOLD));
+
+
+
+class Question10 {
+
+    public static void main(String[] args) {
+        List<String> ls = List.of("Apple", "Banana", "Mango", "Orange", "Pineapple", "Pineappl1", "Pineappl2");
+        int len = ls.stream().mapToInt(String::length).max().orElseThrow();
+        List<Map.Entry<String, Integer>> mp =
+                ls.stream().collect(Collectors.toMap(str ->str, str->str.length()))
+                                .entrySet()
+                                        .stream()
+                                                .filter(entry -> entry.getValue() == len)
+                        .collect(Collectors.toList());
+//                                                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+        mp.forEach(i-> System.out.println(i.getKey()));
+//        System.out.println(mp);
+    }
+
+}
+
+class Question11 {
+    public static void main(String[] args) {
+        List<Integer> ls = List.of(1, 3, 4, 2, 3);
+
+        int res = ls.stream()
+                .collect(Collectors.groupingBy(num -> num, Collectors.counting())) // Count occurrences
+                .entrySet().stream() // Stream over the map entries
+                .filter(entry -> entry.getValue() > 1) // Retain duplicates
+                .flatMap(entry -> Collections.nCopies(entry.getValue().intValue(), entry.getKey()).stream()) // Replicate duplicates
+                .mapToInt(Integer::intValue) // Convert to int stream
+                .sum();
+
+        System.out.println(res);
+
+        //find sum of duplucaes
+//        ls.stream().map(integer -> integer.compareTo(integer ==
+//        ls.stream().collect(Collectors.groupingBy(i->i, Collectors.counting())).forEach((k,v)->{
+//            if(v>1) {
+//                System.out.println(k);
+//            }
+//        });
+//        HashMap<Integer, Integer> mp = new HashMap<>();
+//
+//        mp.put(0, 1);
+//        mp.put(1, 2);
+//        mp.put(2, 3);
+//        mp.put(5, 4);
+//        mp.put()
+//        for (int i = 0; i < mp.size(); i++) {
+//            ;
+//        }
+
+//        for(Map.Entry<Integer, Integer> x : mp.entrySet()) {
+//            x.getKey();
+//
+//        }
+//
+//        Map<Integer, Long> mp1 = ls.stream().collect(Collectors.groupingBy(i -> i, Collectors.counting()));
+////        1 1
+////            2 2
+////            3 2
+////        int sum = 0;
+//        int sum = mp1.entrySet().stream().filter(i -> i.getValue()>1).mapToInt(Map.Entry::getKey).sum();
+////        System.out.println(sum);
+//
+//        int duplicateSum = ls.stream()
+//                .collect(Collectors.groupingBy(num -> num, Collectors.counting())) // Count occurrences
+//                .entrySet().stream() // Stream over the map entries
+//                .filter(entry -> entry.getValue() > 1) // Retain duplicates
+//                .mapToInt(Map.Entry::getValue) // Extract keys (the duplicate numbers)
+//                .sum(); // Sum the duplicate numbers
+//
+//        System.out.println("Sum of duplicates: " + duplicateSum);
+    }
+}
+/**
+* list of strings is given, modify is string by making first char of string as capital.
+ */
+
+class Question12 {
+    public static void main(String[] args) {
+        List<String> st = List.of("lokesh", "sion", "harish", "ankit");
+        st.stream().map(i->i.substring(0, 1).toUpperCase()+i.substring(1)).collect(Collectors.toList()).forEach(System.out::println);
+    }
+}
+
+/**
+ * 1)From the list of employees, get the first employee from the list and return his fullName.
+ * where fullName = firstname + lastname.
+ */
+class Question13 {
+    private String firstName;
+    private String lastName;
+    private double salary;
+
+    public Question13(String firstName, String lastName, double salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        List<Question13> employees = List.of(
+                new Question13("John", "Doe", 50000),
+                new Question13("Jane", "Smith", 60000),
+                new Question13("Mark", "Johnson", 55000)
+        );
+
+        Optional<String> firstEmployeeFullName = employees.stream()
+                .findFirst()
+                .map(Question13::getFirstName);
+
+        firstEmployeeFullName.ifPresent(System.out::println);
+    }
+}
+
+/**
+ * Given a map with the department name as key and value as list of employees belonging to that department.
+ * when a search string is given, need to list out the employees whose firstname or lastname is matching(match should be case insensitive).
+ *
+ * or
+ *
+ * Consider a list of employees,
+ * and if a department name is given as argument, list out the employees which doesn't belong to that department.
+ *
+ * If deptName is "IT" update salary, use ifpresent
+ */
+
+
+class Question14 {
+    private String firstName;
+    private String lastName;
+    private double salary;
+    private String depart;
+
+    public Question14(String firstName, String lastName, String depart, double salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+        this.depart = depart;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getDepart() {
+        return depart;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Question14{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", salary=" + salary +
+                ", depart='" + depart + '\'' +
+                '}';
+    }
+}
+
+class Solution14 {
+
+    static public List<Question14> employee = List.of(
+            new Question14("John", "Doe", "CS", 50000),
+            new Question14("John", "Doe", "CS", 60000),
+            new Question14("Mark", "Johnson", "IT", 55000)
+    );
+    public static void main(String[] args) {
+
+        Map<String, List<Question14>> res = employee.stream().collect(Collectors.groupingBy(i->i.getDepart(), Collectors.toList()));
+        System.out.println(res);
+
+        String str = "john";
+
+        List<Question14> res1 = res.entrySet().stream().flatMap(i->i.getValue().stream().filter(s->s.getFirstName().toLowerCase().equals(str) || s.getLastName().toLowerCase() == str)).collect(Collectors.toList()).stream().toList();
+//        System.out.println(res1);
+
+        String str1 = "CS";
+        List<Question14> res2 = res.entrySet().stream().flatMap(i->i.getValue().stream().filter(s->s.getDepart() != str1)).collect(Collectors.toList()).stream().toList();
+        System.out.println(res2);
+
+        String str2 = "IT";
+        Optional<Question14> res3 = res.entrySet().stream().flatMap(i->i.getValue().stream().filter(s->s.getDepart().equalsIgnoreCase(str2))).findFirst();
+        res3.stream().map(str4->str4.getSalary() + 12).forEach(System.out::println);
+    }
+
+}
+
+/**
+ * consider list of employees and list of employee ids.
+ * return the list of employees matching with the given list of employee ids.
+ */
+
+class Question15 {
+
+}
+
+/**
+ * 1, Consider a list of employees, get the count of employees based on the Gender
+ *
+ * 2, get Male and females list separetly and join the employee full names with delimeter -.
+ * ex: MALE = {[Jhon-Mike-Jack]} and FEMALE ....
+ */
+
+class Question16 {
+    private String name;
+    private String gender;
+
+    Question16(String name, String gender) {
+        this.name = name;
+        this.gender = gender;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Question16{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
+}
+
+class Solution16 {
+    static List<Question16> ls = List.of(new Question16("lokesh", "male"), new Question16("mayukh", "male"),
+            new Question16(
+            "sion", "female"));
+
+    public static void main(String[] args) {
+        Map<String, String> res = ls.stream().collect(Collectors.groupingBy(i->i.getGender(), Collectors.mapping(Question16::getName, Collectors.joining("-"))));
+//                .entrySet()
+//                .stream()
+//                .map(i->i.getValue().stream().filter(x-> Objects.equals(x.getGender(), "female") || Objects.equals(x.getGender(), "male"))).toList().stream().toList();
+
+        System.out.println("MALE = {"+res.getOrDefault("male","")+"}");
+        System.out.println("FEMALE = {"+res.getOrDefault("male","")+"}");
+//        res.stream().forEach(System.out::println);
+    }
+}
+
+/**
+ * Get all the employees in ascending order based on the salary.
+ */
+class Question17 {
+    static List<Employee> ls = List.of(new Employee("lokesh", 2125), new Employee("sion", 2124),
+    new Employee("lokeshsharm", 213445));
+
+    public static void main(String[] args) {
+//        System.out.println(
+                List<Employee> res = ls.stream().sorted(Comparator.comparingDouble(Employee::getSalary)).toList();
+        System.out.println(res);
+//        );
+        int[] nums = new int[]{4,1,2,1,2};
+
+        Arrays.stream(nums).sum();
+        Map<Integer, Integer> mp = new HashMap<>();
+        Set<Integer> m1p = new HashSet<>();
+        m1p.add(1);
+        m1p.contains(1);
+        for (int i = 0; i < nums.length; i++){
+
+//            if (mp.containsKey(nums[i])) {
+                mp.put(nums[i], mp.getOrDefault(nums[i], 0)+1);
+//            }
+
+//            mp.put(nums[i], 1);
+        }
+        //iterate map
+        for (Map.Entry<Integer, Integer> x : mp.entrySet()) {
+            if (x.getValue() == 1) {
+                System.out.println(x.getKey());
+            }
+        }
+        System.out.println(mp.get(2));
+//        for (Map.Entry<Integer, Integer> x : mp.entrySet()) {
+//            if (x.getValue() == 1)
+//        }
+    }
+}
+
+/**
+ * print sum of prime numbers from given list that containing n numbers
+ */
+
+
+
+

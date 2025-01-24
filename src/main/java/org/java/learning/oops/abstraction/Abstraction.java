@@ -1,7 +1,5 @@
 package org.java.learning.oops.abstraction;
 
-public class Abstraction {
-}
 
 abstract class Super {
     public Super() {
