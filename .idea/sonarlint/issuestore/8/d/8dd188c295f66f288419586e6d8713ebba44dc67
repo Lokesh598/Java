@@ -1,0 +1,55 @@
+
+o
+java:S1104V"MMake b a static final constant or non-public and provide accessors if needed.(Ó…½ˆûÿÿÿÿ8“½ÅÇ£2
+e
+java:S35180"CMake sure this expression can't be zero before doing this division.(…ñÎ€ûÿÿÿÿ8ô½ÅÇ£2
+G	java:S106"+Replace this use of System.out by a logger.(©»·Û8Š¾ÅÇ£2
+\
+java:S1161":Add the "@Override" annotation above this method signature(ãëš²ÿÿÿÿÿ8‘¾ÅÇ£2
+F	java:S106"+Replace this use of System.out by a logger.(ñ¡¼8’¾ÅÇ£2
+D
+java:S2387"'"x" is the name of a field in "Second".(ª¶ëÁ8”¾ÅÇ£2
+\
+java:S1161":Add the "@Override" annotation above this method signature(ãëš²ÿÿÿÿÿ8š¾ÅÇ£2
+F	java:S106"+Replace this use of System.out by a logger.(ñ¡¼8ª¾ÅÇ£2
+n	java:S116"MRename this field "$a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÀÚûÿÿÿÿ8º¾ÅÇ£2
+B
+java:S1659" Declare "$a" on a separate line.(ÅÀÚûÿÿÿÿ8¾¾ÅÇ£2
+G	java:S106"+Replace this use of System.out by a logger.(œÈ®½8À¾ÅÇ£2
+F	java:S106"+Replace this use of System.out by a logger.(ªö­?8À¾ÅÇ£2
+v
+java:S1171!"YMove the contents of this initializer to a standard constructor or to field initializers.(Œ±¤ï8Ê¾ÅÇ£2
+G	java:S106""+Replace this use of System.out by a logger.(üÔƒ¹8Ë¾ÅÇ£2
+L	java:S106&"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8Î¾ÅÇ£2
+W
+java:S1854;"5Remove this useless assignment to local variable "b".(¥³µ¯ÿÿÿÿÿ8Ù¾ÅÇ£2
+W
+java:S1854:"5Remove this useless assignment to local variable "b".(Øşô±úÿÿÿÿ8Ú¾ÅÇ£2
+`
+java:S1659:">Declare "b" and all following declarations on a separate line.(Øşô±úÿÿÿÿ8Ü¾ÅÇ£2
+`
+java:S1659P">Declare "y" and all following declarations on a separate line.(´éú²ùÿÿÿÿ8Ü¾ÅÇ£2
+W
+java:S6213*":Rename this variable to not match a restricted identifier.(Ü¾·Ø8İ¾ÅÇ£2
+L	java:S106+"+Replace this use of System.out by a logger.(™áŠóşÿÿÿÿ8Ş¾ÅÇ£2
+L	java:S106,"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ8é¾ÅÇ£2
+F	java:S106."+Replace this use of System.out by a logger.(É«}8ê¾ÅÇ£2
+L	java:S1061"+Replace this use of System.out by a logger.(êğ»ıÿÿÿÿ8ë¾ÅÇ£2
+L	java:S1064"+Replace this use of System.out by a logger.( ïßøÿÿÿÿ8í¾ÅÇ£2
+L	java:S1068"+Replace this use of System.out by a logger.(ÿÖ‚ùÿÿÿÿ8î¾ÅÇ£2
+H
+java:S1481:"&Remove this unused "b" local variable.(Øşô±úÿÿÿÿ8ù¾ÅÇ£2
+L	java:S106<"+Replace this use of System.out by a logger.(æ¨¤šøÿÿÿÿ8ú¾ÅÇ£2
+m
+java:S1764?"KCorrect one of the identical sub-expressions on both sides of operator "&&"(ùÂ¯’ùÿÿÿÿ8ü¾ÅÇ£2
+G	java:S106@"+Replace this use of System.out by a logger.(ûåóˆ8ı¾ÅÇ£2
+G	java:S106B"+Replace this use of System.out by a logger.(äã–8ı¾ÅÇ£2
+L	java:S106E"+Replace this use of System.out by a logger.(ñÂ´øúÿÿÿÿ8ş¾ÅÇ£2
+G	java:S106G"+Replace this use of System.out by a logger.(¯ô¢ô8ş¾ÅÇ£2
+L	java:S106J"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8ş¾ÅÇ£2
+G	java:S106M"+Replace this use of System.out by a logger.(‡¤Ÿ”8ÿ¾ÅÇ£2
+L	java:S106O"+Replace this use of System.out by a logger.(¥ú·éûÿÿÿÿ8ÿ¾ÅÇ£2
+X	java:S125N"<This block of commented-out lines of code should be removed.(ğÊ¸œ8€¿ÅÇ£2
+L	java:S106Q"+Replace this use of System.out by a logger.(Ò²úÿÿÿÿ8‰¿ÅÇ£2
+L	java:S106Z"+Replace this use of System.out by a logger.(Ó€„Çÿÿÿÿÿ8Œ¿ÅÇ£2
+W	java:S125b"<This block of commented-out lines of code should be removed.(®¹¨P8©¿ÅÇ£2

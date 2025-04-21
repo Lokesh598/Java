@@ -1,5 +1,31 @@
 
+i
+java:S1481"&Remove this unused "i" local variable.(»ŸÜš8ë“Äö£2J$6aea9532-0546-442c-bff9-fec1fa298530
+~	java:S125"<This block of commented-out lines of code should be removed.(î¯ÔÉ8ì“Äö£2J$f1f0a9ae-0e50-4cdb-855b-e15dd5161bef
+y
+java:S18541"6Remove this useless assignment to local variable "i1".(Ã™Ñ˜8î“Äö£2J$440126b6-a24b-4984-9a84-fee481bbcb8e
+r	java:S106"+Replace this use of System.out by a logger.(¤¸¤ûÿÿÿÿ8ï“Äö£2J$1b89e28a-dc3b-411d-a98c-b6f8bc803cc8
+m	java:S106"+Replace this use of System.out by a logger.(çì¹§8ð“Äö£2J$c42c9cbe-3af0-4509-94be-55e87f5134ad
+~	java:S125"<This block of commented-out lines of code should be removed.(ÉÖÏÃ8ð“Äö£2J$bc4ced5d-7fe2-4ec1-b7f0-eebd5bac83c3
+n
+java:S1481"&Remove this unused "i" local variable.(ùó›Ìøÿÿÿÿ8ð“Äö£2J$080df2e0-0f68-409a-8eb9-ec33ee5ae97a
+~	java:S125"<This block of commented-out lines of code should be removed.(î¯ÔÉ8ð“Äö£2J$0618f573-7024-49f2-8b51-312f9e2a4e44
+¹
+java:S2159"qUse "Arrays.equals(array1, array2)" or the "==" operator instead of using the "Object.equals(Object obj)" method.(˜ú¼Úüÿÿÿÿ8ñ“Äö£2J$3ec0f705-1836-4293-966e-b322a521c103
+r	java:S106 "+Replace this use of System.out by a logger.(ý·‡‘øÿÿÿÿ8ñ“Äö£2J$93622676-144c-409a-b9b6-8ec225aff3a1
+r	java:S106""+Replace this use of System.out by a logger.(´¯Þðÿÿÿÿÿ8ñ“Äö£2J$c37f19c6-72b2-4bbb-adbc-782180b47fa5
+Œ
+java:S3358""DExtract this nested ternary operation into an independent statement.(´¯Þðÿÿÿÿÿ8ñ“Äö£2J$e408720f-9f4c-4b27-8d66-7b327ecdf6bb
+“
+java:S1764""KCorrect one of the identical sub-expressions on both sides of operator "=="(´¯Þðÿÿÿÿÿ8ñ“Äö£2J$11effe7b-badc-4a90-8c18-51e0d7784847
+ƒ	java:S125$"<This block of commented-out lines of code should be removed.(÷ü€§ýÿÿÿÿ8ò“Äö£2J$4beda3fd-1a70-46f5-98d0-b9cc948dcdec
+c
+java:S2129'" Remove this "String" constructor(Ç…ƒø8ó“Äö£2J$2a258c21-8772-4502-b3f2-4a36ca848ab7
+h
+java:S2129(" Remove this "String" constructor(Þœ×Žùÿÿÿÿ8ó“Äö£2J$5da8b471-531b-4363-941f-d94af747a325
+m	java:S106+"+Replace this use of System.out by a logger.(ûåóˆ8ó“Äö£2J$84622c2a-65a8-48d4-b277-3b28fd1eef53
+m	java:S106/"+Replace this use of System.out by a logger.(åÉäÿ8ô“Äö£2J$9c155af3-7e95-4ed0-b9a7-22a5d8be04a8
 j
-java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ8ïÚú¿†2J$9ec16488-9c25-48ea-8012-f806b476635a
-m	java:S106"+Replace this use of System.out by a logger.(éüëÜ8óÚú¿†2J$edf0d20a-cb23-4629-9f81-42d276f4ba5b
-r	java:S106"+Replace this use of System.out by a logger.(íš§¨úÿÿÿÿ8ôÚú¿†2J$05e6141f-839f-465c-ae77-1bc331dd7ae3
+java:S14811"'Remove this unused "i1" local variable.(Ã™Ñ˜8ô“Äö£2J$487fa130-6e0b-4169-a840-02ac61364029
+m	java:S1063"+Replace this use of System.out by a logger.(à««Ë8ô“Äö£2J$6d10050a-93af-4271-9ff2-8154588f8c07
+m	java:S1066"+Replace this use of System.out by a logger.(÷œÝÜ8ô“Äö£2J$fed83884-1310-4c77-9505-ebfc21fd71d3

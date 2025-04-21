@@ -1,0 +1,7 @@
+what is the singleton class?
+
+singleton class is a class that is having a private constructor.
+
+Singleton is a creational design pattern, that lets us ensure that class has only once instance, while providing
+global access point of that object.
+
