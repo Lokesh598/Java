@@ -29,14 +29,16 @@ class Question1 {
     public void findNumberOfStudentsWhoHaveHighestMarks() {
         List<Student> students = List.of((new Student("Lokesh", 100.0)),
                 (new Student("Mayukh", 200.0)),
-                (new Student("Amit", 200.0)));
+                (new Student("Ank", 10.0)),
+                (new Student("Amit", 200.0)),
+                (new Student("Anit", 100.0)));
 
         double maxMarks = students.stream().mapToDouble(Student::getMarks).max().orElseThrow(RuntimeException::new);
 
-        List<Student> studentList = students.stream().filter(student -> student.getMarks() == maxMarks).toList();
+        List<Student> studentList = students.stream().filter(student -> student.getMarks() < maxMarks).toList();
 
-        Optional<Student> x = students.stream().max(Comparator.comparingDouble(Student::getMarks));
-        System.out.println("result = "+x);
+        System.out.println( students.stream().map(Student::getMarks).distinct().sorted(Comparator.reverseOrder()).mapToDouble(a->a).skip(1).findFirst().getAsDouble());//        System.out.println("result = "+x);
+        System.out.println("lokes");
         studentList.forEach(System.out::println);
 
     }
@@ -465,11 +467,18 @@ class Main {
                 new Question13("Mark", "Johnson", 55000)
         );
 
-        Optional<String> firstEmployeeFullName = employees.stream()
+        Optional<String> firstEmployeeFirstName = employees.stream()
                 .findFirst()
                 .map(Question13::getFirstName);
+        Optional<String> firstEmployeeLastName = employees.stream()
+                .findFirst()
+                .map(Question13::getLastName);
 
-        firstEmployeeFullName.ifPresent(System.out::println);
+        String fullName = String.valueOf(firstEmployeeFirstName) + String.valueOf(firstEmployeeLastName);
+
+//        firstEmployeeFirstName.ifPresent(System.out::println);
+//        firstEmployeeLastName.ifPresent(System.out::println);
+        System.out.println(fullName);
     }
 }
 
@@ -658,9 +667,51 @@ class Question17 {
 }
 
 /**
- * print sum of prime numbers from given list that containing n numbers
+ * /**
+ * Print sum of prime numbers from a given list that contains n numbers.
  */
+class PrintSumOfPrimeNumbers {
+    public void main() {
+        List<Integer> numbers = List.of(2, 3, 4, 5, 6, 7, 8, 9, 10);
+        int sumOfPrimes = numbers.stream()
+                .filter(this::isPrime)
+                .mapToInt(Integer::intValue)
+                .sum();
+        System.out.println("Sum of prime numbers: " + sumOfPrimes);
 
+        System.out.println(numbers.stream().filter(this::isPrime).toList());
+    }
+
+    private boolean isPrime(int number) {
+        if (number <= 1) return false;
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        PrintSumOfPrimeNumbers ob = new PrintSumOfPrimeNumbers();
+        ob.main();
+    }
+}
+
+class Practice23Feb {
+    private static void findCharFreqOfString(String str) {
+
+        String[] strings=str.split("");
+        Map<String,Long> map=Stream.of(strings).collect(Collectors.groupingBy(k->k,LinkedHashMap::new,Collectors.counting()));
+        for(Map.Entry<String,Long> ch: map.entrySet()){
+            System.out.println(ch.getKey()+" "+ ch.getValue());
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        findCharFreqOfString("mississipi");
+    }
+}
 
 
 

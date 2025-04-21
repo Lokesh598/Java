@@ -40,6 +40,29 @@ public class Array {
         }
     }
 
+    class MaximumSubarrayProduct {
+        public int maxProduct(int[] nums) {
+            int prod = Integer.MIN_VALUE, curProd = 1;
+            for (int i = 0; i < nums.length; i++) {
+                curProd *= nums[i];
+
+                if (curProd > prod) {
+                    prod = curProd;
+                }
+                if (curProd == 0) curProd = 1;
+            }
+            curProd = 1;
+            for (int j = nums.length-1; j >= 0; j--) {
+                curProd *= nums[j];
+                if (curProd > prod) {
+                    prod = curProd;
+                }
+                if (curProd == 0) curProd = 1;
+            }
+            return prod;
+        }
+    }
+
     class Searching {
         private static int binarySearch(int[] nums, int target) {
             int l = 0, r = nums.length-1;
@@ -168,7 +191,7 @@ public class Array {
          * @param arr
          */
         private static void insertionSort(int[] arr) {
-            for (int i = 0; i < arr.length; i++) {
+            for (int i = 1; i < arr.length; i++) {
                 int key = arr[i];
                 int j = i-1;
 
@@ -305,4 +328,30 @@ public class Array {
 
 
     }
+
+    static class FrequencyCounter {
+        public static void countFrequencies(int[] nums) {
+            int n = nums.length;
+
+            // Step 1: Use modulo to encode frequency in place
+            for (int i = 0; i < n; i++) {
+                int index = nums[i] % n;  // Get original value
+                nums[index] += n;         // Increase count
+            }
+            for (int i : nums) {
+                System.out.println(i);
+            }
+            // Step 2: Extract frequencies
+            System.out.println("Element : Frequency");
+            for (int i = 0; i < n; i++) {
+                System.out.println((i + 1) + " : " + (nums[i] / n));  // Extract count
+            }
+        }
+
+        public static void main(String[] args) {
+            int[] nums = {2, 3, 3, 2, 5};  // Elements must be within 1 to N
+            countFrequencies(nums);
+        }
+    }
+
 }

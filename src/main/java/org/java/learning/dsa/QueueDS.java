@@ -11,6 +11,82 @@ public class QueueDS {
      * pointers - front, rear
      */
     static class QueueUsingArray {
+        enum Capacity {
+            CAPACITY
+        }
+        int front;
+        int rear;
+        int[] arr;
+        QueueUsingArray (int capacity) {
+            arr = new int[capacity];
+            front = -1;
+            rear = -1;
+        }
+
+        public void add(int val) {
+            if (front == -1) {
+                front = 0;
+            }
+            rear++;
+            arr[rear] = val;
+        }
+
+        public int poll() {
+            int x = arr[front];
+            front++;
+            return x;
+        }
+
+        public int peek() {
+            return arr[rear];
+        }
+
+        public int size() throws Exception {
+            if (front>rear) {
+                System.out.println("Queue underflow");
+            }
+
+            return rear - front + 1;
+        }
+
+        public boolean isEmpty() {
+            if(rear == -1 && front == -1) {
+                return true;
+            } else if (front > rear) {
+                return true;
+            }
+            return false;
+        }
+
+        static class QueueUsingStack {
+
+
+        }
+
+        public static void main(String[] args) throws Exception {
+
+            QueueUsingArray q = new QueueUsingArray(10);
+
+            q.add(1);
+            q.add(2);
+            q.add(3);
+
+            System.out.println(q.peek());
+
+            System.out.println(q.poll());
+            System.out.println(q.poll());
+
+            q.add(4);
+            System.out.println(q.peek());
+
+            System.out.println(q.isEmpty());
+
+            System.out.println(q.size());
+
+        }
+    }
+
+    static class CircularQueue {
 
     }
 

@@ -1,6 +1,5 @@
-package org.java.learning;
+package org.java.learning.hackerrank.ukg;
 
-import java.io.Serializable;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;

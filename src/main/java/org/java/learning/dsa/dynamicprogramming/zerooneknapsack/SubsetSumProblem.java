@@ -36,11 +36,18 @@ public class SubsetSumProblem {
                 t[i][0] = true;
                 t[0][0] = true;
                 t[0][j] = false;
-                if(arr[i-1] <= j) {
+                if(arr[i-1] <= j) { //arr is wt array here
                     t[i][j] = t[i-1][j-arr[i-1]] || t[i-1][j];
                 } else
                     t[i][j] = t[i-1][j];
             }
+        }
+
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= sum; j++) {
+                System.out.print(t[i][j] + " ");
+            }
+            System.out.println();
         }
         System.out.println(t[n][sum]);
     }

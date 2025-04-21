@@ -1,5 +1,9 @@
 package org.java.learning.dsa.dynamicprogramming.longestcommonsubsequence.lcsbasedproblem;
 
+
+/**
+ * @Hint: Lcs variation (m+n - 2*lcs)
+ */
 public class EditDistance {
     /**
      * tabulation solution

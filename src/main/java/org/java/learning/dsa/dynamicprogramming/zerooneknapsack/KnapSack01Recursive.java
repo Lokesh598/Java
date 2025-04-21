@@ -10,7 +10,7 @@ public class KnapSack01Recursive {
         if(ind == 0 || w == 0)
             return 0;
 
-        if(wts[ind-1] > w) {
+        if(wts[ind-1] > w) { //skip if element is already greater than given bag
             // exclude
             return knapSack(w, wts, val, ind-1);
         } else {

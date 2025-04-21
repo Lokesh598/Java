@@ -31,11 +31,11 @@ public class CoinChangeTabulation {
         }
         for (int i = 1; i<dp.length; i++) {
             for (int j = 1; j<dp[0].length; j++) {
-                if (coins[i-1] <= j) {
+                if (coins[i-1] > j) {
                     // dp[i] === infinite supply, same as count subset sum problem
-                    dp[i][j] = dp[i][j-coins[i-1]] + dp[i-1][j];
-                } else {
                     dp[i][j] = dp[i-1][j];
+                } else {
+                    dp[i][j] = dp[i][j-coins[i-1]] + dp[i-1][j];
                 }
             }
         }
@@ -44,9 +44,9 @@ public class CoinChangeTabulation {
     }
     public static void main(String[] args) {
 
-        int n = 4;
-        int[] coins = new int[]{2, 5, 3, 6};
-        int sum = 10;
+        int n = 3;
+        int[] coins = new int[]{1,2,3};
+        int sum = 4;
 //        for (int i: coins) {
 //            sum += i;
 //        }

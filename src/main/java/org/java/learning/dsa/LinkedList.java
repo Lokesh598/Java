@@ -1,12 +1,18 @@
 package org.java.learning.dsa;
 
 
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class LinkedList {
     static class ListNode {
         private final int data;
         private ListNode next;
 
-        ListNode (int data) {this.data = data;}
+        ListNode(int data) {
+            this.data = data;
+        }
+
         ListNode(int data, ListNode next) {
             this.data = data;
             this.next = next;
@@ -15,6 +21,7 @@ public class LinkedList {
 
     /**
      * reverse linked list
+     *
      * @param head
      */
     private ListNode reverseList(ListNode head) {
@@ -38,7 +45,7 @@ public class LinkedList {
 
         ListNode pre = dummy;
 //        int cnt = left;
-        while (left--!= 0) {
+        while (left-- != 0) {
             if (left == 1) {
                 break;
             }
@@ -47,7 +54,7 @@ public class LinkedList {
 
         ListNode cur = pre.next;
 
-        for (int i = 0; i < right-left; i++) {
+        for (int i = 0; i < right - left; i++) {
             ListNode forw = cur.next;
             cur.next = forw.next;
             forw.next = pre.next;
@@ -55,6 +62,34 @@ public class LinkedList {
         }
         return dummy.next;
     }
+
+    private ListNode reverseListInGroupOfSizeK(ListNode head, int k) {
+        ListNode tmp = head, cur = null, pre = null;
+        int count = 0;
+        while (tmp != null && count < k) {
+            cur = tmp;
+            tmp = tmp.next;
+            cur.next = pre;
+            pre = cur;
+            count++;
+        }
+        if (tmp != null) {
+            ListNode resList = reverseListInGroupOfSizeK(tmp, k);
+            head.next = resList;
+        }
+        return pre;
+    }
+
+//    removeCycleFromList() {
+//
+//        if(slow == NULL) return;
+//        Node *tmp = slow;
+//        while(tmp->next != slow) {
+//            tmp = tmp->next;
+//        }
+//        tmp->next = NULL;
+//        return;
+//}
 
     private void printList(ListNode head) {
 
@@ -194,6 +229,7 @@ return null;
      * @param args
      */
     public static void main(String[] args) {
+
         LinkedList linkedList = new LinkedList();
         ListNode head = new ListNode(1, null);
         ListNode node1 = new ListNode(2, null);
@@ -207,6 +243,8 @@ return null;
 
         head = linkedList.reverseList(head);
 
+        ListNode tmp = head;
+
         int pos = linkedList.returnPostionIfValExist(head, 4);
         System.out.println("Given node value position is " + pos);
 
@@ -214,6 +252,7 @@ return null;
 
         linkedList.printList(linkedList.sortLinkedList(head));
         linkedList.printList(linkedList.reverseList2(head, 2, 3));
+        linkedList.printList(linkedList.reverseListInGroupOfSizeK(tmp, 2));
     }
 
     static class DoublyListNode {

@@ -44,6 +44,7 @@ public class MinimumSumPartition {
         for(int i : arr){
             range += i;
         }
+        //range is sum of given array values
         subsetSum(n, arr, range);
 
         // store last row in the vector those are true

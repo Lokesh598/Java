@@ -10,12 +10,12 @@ public class KnapSack01Tabulation {
         for(int i = 0; i<=w; i++) {
             dp[0][i] = 0;
         }
-        for(int i = 1; i<=n; i++) {
-            for(int j = 1; j <= w; j++) {
-                if(val[i-1] > j) {
+        for(int i = 1; i<=n; i++) {//idx
+            for(int j = 1; j <= w; j++) {//bag
+                if(wt[i-1] > j) {
                     dp[i][j] = dp[i-1][j];
                 } else {
-                    dp[i][j] = Math.max(wt[i-1] + dp[i-1][j-val[i-1]], dp[i-1][j]);
+                    dp[i][j] = Math.max(val[i-1] + dp[i-1][j-wt[i-1]], dp[i-1][j]);
                 }
             }
         }
@@ -30,8 +30,10 @@ public class KnapSack01Tabulation {
         return dp[n][w];
     }
     public static void main(String[] args) {
-        int[] val = new int[]{1,2,3};
-        int[] wt = new int[]{4,5,6};
-        System.out.println(knapSack(4, val, wt, 3));
+        int[] wts = {1, 3, 4, 5, 6};
+        int[] val = {1, 4, 5, 7, 9};
+        int w = 7;
+        int n = val.length;
+        System.out.println(knapSack(w, val, wts, n));
     }
 }

@@ -2,7 +2,9 @@ package org.java.learning.dsa.dynamicprogramming.longestcommonsubsequence.lcsbas
 
 
 /**
- * @Hint: Lcs variation (m+n - 2*lcs) leetcode problem
+ * @Hint: Lcs variation (m+n - 2*lcs) leetcode problem, edit distance
+ *
+ * Find the minimum changes to convert one string to another
  *
  * @Problem: Given two strings word1 and word2, return the minimum number of steps required
  * to make word1 and word2 the same.
